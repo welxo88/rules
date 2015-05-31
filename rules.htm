@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>SKL säännöt - helposti luettuna</title>
+</head>
+
+<body>  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script> 
+<div class="container theme-showcase"> 
+  <div class="page-header"> <h1>Rules - lue sääntöjä helpommin</h1> 
+  </div>Ladataan...
+</div> 
+<p>&nbsp;</p> 
+<script>
+//$.getJSON( "./skl-showrules.json", function( data ) {
+//  var rulesToShow = data;
+//});
+var rulesToShow = 
+[
+  {
+    "ruleId": "nlysaannot",
+    "ruleName": "Koiranäyttelysäännöt",
+    "validStart": "2012-01-01",
+    "validEnd": "2016-12-31",
+    "approvedDate": "2011-11-27",
+    "sections": [
+      {
+        "sectionHeader": "Yleistä",
+        "sectionId": 1,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Näitä sääntöjä noudatetaan Suomen Kennelliitto - Finska Kennelklubben ry:n (jäljempänä Kennelliitto) hyväksymissä koiranäyttelyissä. Ilmoittaessaan koiran näyttelyyn näytteilleasettaja sitoutuu noudattamaan näitä sääntöjä sekä näitä sääntöjä täydentäviä Kennelliiton näyttelynjärjestämisohjeita ja FCI:n ohjeita sekä suostuu siihen, että hänen ilmoittautumislomakkeessa antamansa henkilö – ja osoitetiedot saa julkaista ja antaa ulkopuolisille, ellei hän ole tätä osoitetietojen osalta erikseen kieltänyt.",
+            "paragraphInterpretation" : "mahdolliset tulkintaohjeet tänne, sekä kuka niistä vastuussa."
+          },
+          {
+            "paragraphId" : 2,
+            "paragraphText" : "Näyttelystä on ilmoitettava vähintään kaksi kuukautta ennen sen toimeenpanemista Kennelliiton julkaisussa Koiramme-Våra Hundar.",
+            "paragraphInterpretation" : null
+          }
+        ]
+      }, {
+        "sectionHeader": "Näyttelyiden tarkoitus",
+        "sectionId": 2,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Näyttelyiden tarkoituksena on tarjota koiraharrastajille mahdollisuus kilpailla omistamiensa/esittämiensä koirien kanssa. Koiranäyttelyissä koiraharrastajalla on tilaisuus vertailla jalostustyön tuloksia ja arvioida rodun jalostusmateriaalia. ",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 2,
+            "paragraphText" : "Koirien hyvinvoinnin on oltava koiranäyttelyissä aina etusijalla.",
+            "paragraphInterpretation" : null
+          }
+        ]
+      }, {
+        "sectionHeader": "Osallistumisoikeus",
+        "sectionId": 3,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Näyttelyyn saavat osallistua FCI:n tunnustaman maan kenneljärjestössä rekisteröidyt FCI:n ja Pohjoismaisen Kennelunionin PKU:n hyväksymien rotujen koirat, jotka on tunnistusmerkitty Kennelliiton hyväksymällä tavalla ja täyttävät voimassa olevat Kennelliiton hyväksymät terveysmääräykset. Kansainvälisissä näyttelyissä rodut, joita FCI ei ole hyväksynyt, sijoitetaan näyttelyluettelossa omaan osioonsa ja ne eivät osallistu ryhmäkilpailuihin.",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 2,
+            "paragraphText" : "Arvostelun aikana ei koiralla saa olla kuonokoppaa tai muuta vastaavaa hallintavälinettä.",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 3,
+            "paragraphText" : "Näyttelyyn ei saa osallistua",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 4,
+            "paragraphText" : "* koira, jota ei ole rokotettu Kennelliiton rokotusmääräysten mukaan",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 5,
+            "paragraphText" : "* sairas koira",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 6,
+            "paragraphText" : "* uros, jolla ei ole normaalit kivekset, ellei urosta ole kastroitu vamman tai sairauden takia, mistä on esitettävä Kennelliiton hyväksymä eläinlääkärintodistus. Lisäksi vaaditaan eläinlääkärintodistus tai näyttelytulos, josta ilmenee, että uroksella on ollut vähintään 6 kk. iässä normaalit kivekset.",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 7,
+            "paragraphText" : "* kantava narttu 30 vuorokautta ennen laskettua aikaa (laskettu aika = 63 vrk ensimmäisestä astutuksesta) ja synnyttänyt narttu alle 75 vrk synnytyksen jälkeen",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 8,
+            "paragraphText" : "* Suomen lain vastaisesti typistetyt koirat (erillinen luettelo roduista, joilla esiintyy ns. luonnontöpöhäntäisyyttä)",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 9,
+            "paragraphText" : "* vaarallisen vihainen koira",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 10,
+            "paragraphText" : "* koira, joka on saanut näyttelyssä kolme kertaa laatumaininnan ”hylätty” käyttäytymisen takia",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 11,
+            "paragraphText" : "* koira, jolle on tehty jokin toimenpide rotumääritelmän mukaan tai muuten viaksi katsottavan ominaisuuden korjaamiseksi",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 12,
+            "paragraphText" : "* koira, jonka karvapeite on värjätty tai joka on trimmattu rotumääritelmän vastaisesti, pyrkimyksenä salata esim. pitkäkarvaisuutta tai todellista karvanlaatua",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 13,
+            "paragraphText" : "* koiran karvapeitteen, kirsun ja ihon käsitteleminen sellaisilla aineilla, jotka vaikuttavat väriin, muotoon ja rakenteeseen on kielletty",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 14,
+            "paragraphText" : "* yleisen antidoping-säännön vastainen koira (liite 1)",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 15,
+            "paragraphText" : "Sääntöjen vastaisen menettelyn tutkimiseksi on näyttelytoimikunnan valtuuttamalla henkilöllä oikeus ottaa koirista tarvittavia näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 16,
+            "paragraphText" : "Näyttelyyn osallistumisoikeutta ei ole",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 17,
+            "paragraphText" : "* koiralla, jonka omistajalla tai yhdelläkin omistajista on Kennelliiton kurinpitolautakunnan lisäseuraamuksena määräämä kielto tai Kennelliiton hallituksen määräämä tilapäinen kielto osallistua näyttelyihin näytteilleasettajana tai esittäjänä",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 18,
+            "paragraphText" : "* kasvattajaryhmällä, jonka kasvattajalla tai yhdelläkin kasvattajista on Kennelliiton kurinpitolautakunnan lisäseuraamuksena määräämä kielto tai Kennelliiton hallituksen määräämä tilapäinen kielto osallistua näyttelyihin näytteilleasettajana tai esittäjänä",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          }
+        ]
+      }, {
+        "sectionHeader": "Jääviys",
+        "sectionId": 3.1,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Näyttelyssä noudatetaan kulloinkin voimassa olevaa Kennelliiton yleistä jääviyssääntöä.",
+            "paragraphInterpretation" : null
+          }
+        ]
+      }, {
+        "sectionHeader": "Terveysmääräykset",
+        "sectionId": 3.2,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Näyttelyn eläinlääkäri voi tarkastaa koiria ja todetessaan koiran sairaaksi, hänellä on oikeus poistaa se näyttelystä. Eläinlääkäri voi myös ottaa koirista näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+            "paragraphInterpretation" : null
+          }
+        ]
+      }, {
+        "sectionHeader": "Ilmoittautuminen",
+        "sectionId": 4,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "Ilmoittautuminen on tehtävä joko postitse tai sähköisesti Kennelliiton hyväksymällä lomakkeella, joka on maksuineen toimitettava näyttelytoimikunnalle ennen ilmoittautumisajan päättymistä. Sekä maksupäivän että kirjeen postileiman päiväyksen on oltava viimeistään ilmoittautumisajan päättymispäivä.",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 2,
+            "paragraphText" : "Koira on ilmoitettava näyttelyyn sillä nimellä ja sen rotuisena, jolla se on rekisteröity. Se on ilmoitettava laatuarvosteluluokkaan, johon se on oikeutettu osallistumaan. Ilmoittautumisajan päättymisen jälkeen koiraa ei voida siirtää toiseen luokkaan (ellei kysymyksessä ole järjestäjästä johtuva virhe) seuraavia tapauksia lukuun ottamatta:",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 3,
+            "paragraphText" : "* Suomen Muotovalion arvon saavuttanutta koiraa, joka voidaan siirtää valioluokkaan",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 4,
+            "paragraphText" : "* Suomessa/Pohjoismaissa käyttöluokkaan oikeuttavat tulokset saavuttanutta koiraa, joka voidaan siirtää käyttöluokkaan.",
+            "paragraphInterpretation" : null,
+            "paragraphIsSub" : true
+          },
+          {
+            "paragraphId" : 5,
+            "paragraphText" : "Jos koirasta on ilmoitettaessa annettu vääriä tietoja, koira voidaan sulkea näyttelystä ja mitätöidä sille jo mahdollisesti annetut tulokset.",
+            "paragraphInterpretation" : null
+          }
+        ]
+      }/*, {
+        "sectionHeader": "",
+        "sectionId": 0,
+        "paragraphs": [
+          {
+            "paragraphId" : 1,
+            "paragraphText" : "",
+            "paragraphInterpretation" : null
+          },
+          {
+            "paragraphId" : 2,
+            "paragraphText" : "",
+            "paragraphInterpretation" : null
+          }
+        ]
+      } */
+    ]
+  }
+]
+</script> 
+<script>var showHideSection = function() {
+	var id = $( this ).attr("id");
+	var proID = id.substring(0, id.length-7);
+	//console.log(proID + "\n");
+	for(var i = 1; i < 100; i++){
+		var idForSearch = proID + "-par" + i;
+		idForSearch = idForSearch.replace(".", "\\\\.");
+		//console.log(idForSearch + "\n");
+		if($("#" + idForSearch).length == 0) {
+		  console.log("breaked at: #" + idForSearch + "\n");
+		  break;
+		} else {
+			$("#" + idForSearch).toggle(500);
+		}
+	}
+	
+}
+var showHideInterpretation = function() {
+	var id = $( this ).parent().parent().attr("id");
+	//alert(id);
+	$("#" + id + " p:last-child").toggle(500);
+}
+
+$( document ).ready(function() {
+  $("div.container")
+      .contents()
+      .filter(
+        function(){return this.nodeType ===3})
+      .remove();
+
+
+  for(var i = 0; i < rulesToShow.length; i++){
+    var rule = rulesToShow[i];
+    var ruleContainer = $("<div id='" + rule.ruleId + "'></div>");
+    var ruleHeader = $("<div class='row' id='" + rule.ruleId + "-header'></div>").append(
+      $("<div class='col-md-12'></div>").append(
+        $("<h3>" + rule.ruleName + "<br /> <small>Hyväksytty: " + rule.approvedDate + ". Voimassa: " + rule.validStart + " - " + rule.validEnd + "</small></h3>")));
+    
+    ruleContainer.append(ruleHeader);
+    
+    
+    for(var j = 0; j < rule.sections.length; j++){
+      var section = rule.sections[j];
+      var sectionContainer = $("<div id='" + rule.ruleId + "-sec" + section.sectionId + "'></div>");
+      var sectionHeader = $("<div class='row' id='" + rule.ruleId + "-sec" + section.sectionId + "-header'></div>").append(
+      $("<div class='col-md-12'></div>").append(
+        $("<h4>" + section.sectionId + ". " + section.sectionHeader + "</h4>")));
+	  sectionHeader.click(showHideSection);
+	  sectionHeader.css("cursor", "pointer");
+        
+      sectionContainer.append(sectionHeader);
+        
+        for(var k = 0; k < section.paragraphs.length; k++) {
+          var paragraph = section.paragraphs[k];
+          
+		  var paragraphContainer = $("<div class='row' id='" + rule.ruleId + "-sec" + section.sectionId + "-par" + paragraph.paragraphId + "'></div>");
+		  paragraphContainer.css("display","none");
+          
+		  var paragraphText = $("<div class='col-md-11'></div>");
+		  if(paragraph.paragraphIsSub == true) paragraphText.addClass('col-md-offset-1');
+		  paragraphText.append($("<p>" + paragraph.paragraphText + "</p>"));
+          
+		  if(paragraph.paragraphInterpretation != null) {
+			var glyphicon = $("<span class='glyphicon glyphicon-bookmark' aria-hidden='true'></span>");
+			glyphicon.click(showHideInterpretation);
+			glyphicon.css("cursor", "pointer");
+            paragraphText.append(glyphicon);
+			
+			var paragraphInterpretationText = $("<p class='text-right'><small><em>" + paragraph.paragraphInterpretation + "</em></small></p>");
+			paragraphInterpretationText.css("display", "none")
+            paragraphContainer.append(paragraphText, paragraphInterpretationText);
+          } else {
+            paragraphContainer.append(paragraphText);
+          }
+          
+      
+          sectionContainer.append(paragraphContainer);
+        }
+        
+      ruleContainer.append(sectionContainer);
+    }
+    
+    
+    $("div.container").append(ruleContainer);
+    
+    //<div class="row">
+    //<div class="col-md-6">.col-md-6</div>
+    //<div class="col-md-6">.col-md-6</div>
+    //</div>
+  }
+  //$("#tulokset > #progress-perus > .progress-bar-success").css("width", answer_values_2s/12*100+"%");
+
+  //rulesToShow[0].sections[0].paragraphs[0]  
+  
+});
+</script> </body>
+</html>
