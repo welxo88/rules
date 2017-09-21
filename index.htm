@@ -11,15 +11,19 @@
     <!-- semantic ui - accordeon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+    <!-- react -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+    <!-- babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <!-- react-router -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.2.0/react-router-dom.min.js"></script>
     <title>SKL säännöt - helposti luettuna</title>
 </head>
 
 <body>	
     <div id="root" class="ui container">ladataan...</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.2.2/react-router-dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
     <script>
         var rulesToShow = 
         [
@@ -354,6 +358,8 @@
         ]
         </script> 
     <script type="text/babel">
+    var { HashRouter, Route } = ReactRouterDOM;
+
     class Menu extends React.Component {
         render() {
             return (<div className="ui borderless main menu placeholder inverted">
@@ -432,7 +438,9 @@
         }
     }
     ReactDOM.render(
-        <RulesGUI />,
+        <HashRouter>
+            <Route path="/" component={RulesGUI}/>
+        </HashRouter>,
         document.getElementById('root')
     );
     </script>
