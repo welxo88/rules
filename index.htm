@@ -473,6 +473,17 @@
         </script> 
     <script type="text/babel">
     var { HashRouter, Route, Switch, Link } = ReactRouterDOM;
+    function setAccordionScriptTag() {
+        let sOld = document.getElementById("accordeonJqueryScript");
+        sOld.parentNode.removeChild(sOld);
+
+        const s = document.createElement('script');
+        s.id = 'accordeonJqueryScript';
+        s.type = 'text/javascript';
+        s.async = true;
+        s.innerHTML = "$(function () {$('.accordion').first().accordion({ exclusive: false });});";
+        document.body.appendChild(s);
+    }
 
     class Menu extends React.Component {
         render() {
@@ -575,6 +586,13 @@
         constructor(props) {
             super(props);
         }
+        componentDidMount() {
+            document.title = "Rules - sääntöjä helpommin";
+            setAccordionScriptTag();
+        }
+        componentDidUpdate() {
+            setAccordionScriptTag();
+        }
         render() {
             let rule;
             for(let i = 0; i < rulesToShow.length; i++){
@@ -588,14 +606,14 @@
                     <RuleBody key={rule.ruleId} data={rule} topAccordion={true} />
                     <br />
                     <RulesCards />
-                </div>
-                );
+                </div>);
         }
     }
 
     class RulesRoot extends React.Component {
         componentDidMount() {
             document.title = "Rules - sääntöjä helpommin";
+            setAccordionScriptTag();
         }
         render() {
             return (
@@ -605,7 +623,6 @@
                     <br />
                     <RulesCards />
                 </div>
-                
             );
         }
     }
@@ -619,6 +636,6 @@
         document.getElementById('root')
     );
     </script>
-    <script>$(function () {$('.accordion').first().accordion({ exclusive: false });});</script>
+    <script id="accordeonJqueryScript">$(function () {$('.accordion').first().accordion({ exclusive: false });});</script>
 </body>
 </html>
