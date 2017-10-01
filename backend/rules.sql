@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS `rules` (
   `validEnd` date NULL,
   `approvedDate` date NULL,
   `approvedBy` varchar(30) NULL,
-  `linkToOriginal` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `linkToOriginal` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  UNIQUE INDEX ruleTextId_unique (ruleTextId),
   PRIMARY KEY (`ruleId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
