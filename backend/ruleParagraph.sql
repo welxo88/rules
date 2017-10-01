@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `ruleParagraph` (
   `paragraphText` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `paragraphInterpretation`  TEXT CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `paragraphIsSub` BOOL DEFAULT FALSE,
+  `paragraphIsPartOfList` BOOL DEFAULT FALSE,
   PRIMARY KEY (`ruleId`, `sectionId`, `paragraphId`),
   FOREIGN KEY (ruleId, sectionId) REFERENCES ruleSections(ruleId, sectionId)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
