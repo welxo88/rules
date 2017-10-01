@@ -1,15 +1,8 @@
- <?php
-$servername = "..";
-$username = "..";
-$password = "..";
-$dbname = "..";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+<?php
+// connection
+$conn = new mysqli("servername", "username", "password", "dbname");
+// check connection
+if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error);}
 
 $sql = "
 SELECT 
@@ -25,15 +18,25 @@ INNER JOIN
 ORDER BY
 	LENGTH(rules.ruleId), rules.ruleId, LENGTH(ruleSections.sectionId), ruleSections.sectionId, LENGTH(ruleParagraph.paragraphId), ruleParagraph.paragraphId
 ";
+//get data from db
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    }
-} else {
-    echo "0 results";
+//organize info into array
+$return_arr = array();
+$row_array = array();
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    $row_array['paragraphId'] = $row['paragraphId'];
+    $row_array['paragraphText'] = $row['paragraphText'];
+    $row_array['paragraphInterpretation'] = $row['paragraphInterpretation'];
+    $row_array['paragraphIsSub'] = $row['paragraphIsSub'];
+    $row_array['paragraphIsPartOfList'] = $row['paragraphIsPartOfList'];
+
+    array_push($return_arr,$row_array);
+    $row_array = array();
 }
+
+//print array out as json
+echo json_encode($return_arr);
+
 $conn->close();
 ?> 
