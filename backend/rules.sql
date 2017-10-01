@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `rules` (
 --
 
 INSERT INTO `rules` 
-	(`ruleId`, `ruleTextId`, `ruleName`, `validStart`, `validEnd`, `approvedDate`, `approvedBy`) 
+	(`ruleId`, `ruleTextId`, `ruleName`, `validStart`, `validEnd`, `approvedDate`, `approvedBy`, `linkToOriginal`) 
 VALUES
 	(1, 'nlysaannot17', 'Koiranäyttelysäännöt', 
 	 	'2017-01-01', '2021-12-31', '2016-05-29',
