@@ -1,0 +1,19 @@
+{
+  "name": "rules",
+  "version": "0.1.0",
+  "description": "View rules easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welxo88/rules.git"
+  },
+  "author": "Dmitry Poletaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/welxo88/rules/issues"
+  },
+  "homepage": "https://github.com/welxo88/rules#readme"
+}
