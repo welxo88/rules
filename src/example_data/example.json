@@ -1,0 +1,444 @@
+[
+    {
+      "ruleId": "nlysaannot",
+      "ruleName": "Koiranäyttelysäännöt",
+      "validStart": "2012-01-01",
+      "validEnd": "2016-12-31",
+      "approvedDate": "2011-11-27",
+      "sections": [
+        {
+          "sectionHeader": "Yleistä",
+          "sectionId": 1,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näitä sääntöjä noudatetaan Suomen Kennelliitto - Finska Kennelklubben ry:n (jäljempänä Kennelliitto) hyväksymissä koiranäyttelyissä. Ilmoittaessaan koiran näyttelyyn näytteilleasettaja sitoutuu noudattamaan näitä sääntöjä sekä näitä sääntöjä täydentäviä Kennelliiton näyttelynjärjestämisohjeita ja FCI:n ohjeita sekä suostuu siihen, että hänen ilmoittautumislomakkeessa antamansa henkilö – ja osoitetiedot saa julkaista ja antaa ulkopuolisille, ellei hän ole tätä osoitetietojen osalta erikseen kieltänyt.",
+              "paragraphInterpretation" : "mahdolliset tulkintaohjeet tänne, sekä kuka niistä vastuussa."
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Näyttelystä on ilmoitettava vähintään kaksi kuukautta ennen sen toimeenpanemista Kennelliiton julkaisussa Koiramme-Våra Hundar.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Näyttelyiden tarkoitus",
+          "sectionId": 2,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyiden tarkoituksena on tarjota koiraharrastajille mahdollisuus kilpailla omistamiensa/esittämiensä koirien kanssa. Koiranäyttelyissä koiraharrastajalla on tilaisuus vertailla jalostustyön tuloksia ja arvioida rodun jalostusmateriaalia. ",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Koirien hyvinvoinnin on oltava koiranäyttelyissä aina etusijalla.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Osallistumisoikeus",
+          "sectionId": 3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyyn saavat osallistua FCI:n tunnustaman maan kenneljärjestössä rekisteröidyt FCI:n ja Pohjoismaisen Kennelunionin PKU:n hyväksymien rotujen koirat, jotka on tunnistusmerkitty Kennelliiton hyväksymällä tavalla ja täyttävät voimassa olevat Kennelliiton hyväksymät terveysmääräykset. Kansainvälisissä näyttelyissä rodut, joita FCI ei ole hyväksynyt, sijoitetaan näyttelyluettelossa omaan osioonsa ja ne eivät osallistu ryhmäkilpailuihin.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Arvostelun aikana ei koiralla saa olla kuonokoppaa tai muuta vastaavaa hallintavälinettä.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 3,
+              "paragraphText" : "Näyttelyyn ei saa osallistua",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 4,
+              "paragraphText" : "* koira, jota ei ole rokotettu Kennelliiton rokotusmääräysten mukaan",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 5,
+              "paragraphText" : "* sairas koira",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 6,
+              "paragraphText" : "* uros, jolla ei ole normaalit kivekset, ellei urosta ole kastroitu vamman tai sairauden takia, mistä on esitettävä Kennelliiton hyväksymä eläinlääkärintodistus. Lisäksi vaaditaan eläinlääkärintodistus tai näyttelytulos, josta ilmenee, että uroksella on ollut vähintään 6 kk. iässä normaalit kivekset.",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 7,
+              "paragraphText" : "* kantava narttu 30 vuorokautta ennen laskettua aikaa (laskettu aika = 63 vrk ensimmäisestä astutuksesta) ja synnyttänyt narttu alle 75 vrk synnytyksen jälkeen",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 8,
+              "paragraphText" : "* Suomen lain vastaisesti typistetyt koirat (erillinen luettelo roduista, joilla esiintyy ns. luonnontöpöhäntäisyyttä)",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 9,
+              "paragraphText" : "* vaarallisen vihainen koira",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 10,
+              "paragraphText" : "* koira, joka on saanut näyttelyssä kolme kertaa laatumaininnan ”hylätty” käyttäytymisen takia",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 11,
+              "paragraphText" : "* koira, jolle on tehty jokin toimenpide rotumääritelmän mukaan tai muuten viaksi katsottavan ominaisuuden korjaamiseksi",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 12,
+              "paragraphText" : "* koira, jonka karvapeite on värjätty tai joka on trimmattu rotumääritelmän vastaisesti, pyrkimyksenä salata esim. pitkäkarvaisuutta tai todellista karvanlaatua",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 13,
+              "paragraphText" : "* koiran karvapeitteen, kirsun ja ihon käsitteleminen sellaisilla aineilla, jotka vaikuttavat väriin, muotoon ja rakenteeseen on kielletty",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 14,
+              "paragraphText" : "* yleisen antidoping-säännön vastainen koira (liite 1)",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 15,
+              "paragraphText" : "Sääntöjen vastaisen menettelyn tutkimiseksi on näyttelytoimikunnan valtuuttamalla henkilöllä oikeus ottaa koirista tarvittavia näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 16,
+              "paragraphText" : "Näyttelyyn osallistumisoikeutta ei ole",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 17,
+              "paragraphText" : "* koiralla, jonka omistajalla tai yhdelläkin omistajista on Kennelliiton kurinpitolautakunnan lisäseuraamuksena määräämä kielto tai Kennelliiton hallituksen määräämä tilapäinen kielto osallistua näyttelyihin näytteilleasettajana tai esittäjänä",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 18,
+              "paragraphText" : "* kasvattajaryhmällä, jonka kasvattajalla tai yhdelläkin kasvattajista on Kennelliiton kurinpitolautakunnan lisäseuraamuksena määräämä kielto tai Kennelliiton hallituksen määräämä tilapäinen kielto osallistua näyttelyihin näytteilleasettajana tai esittäjänä",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            }
+          ]
+        }, {
+          "sectionHeader": "Jääviys",
+          "sectionId": 3.1,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyssä noudatetaan kulloinkin voimassa olevaa Kennelliiton yleistä jääviyssääntöä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Terveysmääräykset",
+          "sectionId": 3.2,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyn eläinlääkäri voi tarkastaa koiria ja todetessaan koiran sairaaksi, hänellä on oikeus poistaa se näyttelystä. Eläinlääkäri voi myös ottaa koirista näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Ilmoittautuminen",
+          "sectionId": 4,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Ilmoittautuminen on tehtävä joko postitse tai sähköisesti Kennelliiton hyväksymällä lomakkeella, joka on maksuineen toimitettava näyttelytoimikunnalle ennen ilmoittautumisajan päättymistä. Sekä maksupäivän että kirjeen postileiman päiväyksen on oltava viimeistään ilmoittautumisajan päättymispäivä.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Koira on ilmoitettava näyttelyyn sillä nimellä ja sen rotuisena, jolla se on rekisteröity. Se on ilmoitettava laatuarvosteluluokkaan, johon se on oikeutettu osallistumaan. Ilmoittautumisajan päättymisen jälkeen koiraa ei voida siirtää toiseen luokkaan (ellei kysymyksessä ole järjestäjästä johtuva virhe) seuraavia tapauksia lukuun ottamatta:",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 3,
+              "paragraphText" : "* Suomen Muotovalion arvon saavuttanutta koiraa, joka voidaan siirtää valioluokkaan",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 4,
+              "paragraphText" : "* Suomessa/Pohjoismaissa käyttöluokkaan oikeuttavat tulokset saavuttanutta koiraa, joka voidaan siirtää käyttöluokkaan.",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 5,
+              "paragraphText" : "Jos koirasta on ilmoitettaessa annettu vääriä tietoja, koira voidaan sulkea näyttelystä ja mitätöidä sille jo mahdollisesti annetut tulokset.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Ilmoittautumismaksun palauttaminen",
+          "sectionId": 5,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Ilmoittautumismaksu palautetaan näytteilleasettajan niin halutessa, jos",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "* näyttely peruutetaan",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 3,
+              "paragraphText" : "* ilmoittautuminen peruutetaan tuomarimuutoksen vuoksi, ellei näyttelytoimikunta ole etukäteen ennen ensimmäisen ilmoittautumisajan päättymistä ilmoittanut rodulle varatuomaria näyttelyn virallisessa tiedotteessa (Koiramme-Våra hundar)",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 4,
+              "paragraphText" : "* näyttelyilmoittautuminen on myöhästynyt",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 5,
+              "paragraphText" : "* näyttelyyn ilmoitetun koiran kasvattaja kutsutaan kyseisen rodun tuomariksi ilmoittautumisajan päätyttyä",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 6,
+              "paragraphText" : "* arvostelun aikana todetaan, että näytteilleasettajan uroksella ei ole normaalit kivekset eikä ole eläinlääkärintodistusta kastroinnista",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 7,
+              "paragraphText" : "Ilmoittautumismaksua ei palauteta, jos",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 8,
+              "paragraphText" : "* näyttelyyn ilmoitettua koiraa ei ole rokotettu tai tunnistusmerkitty Kennelliiton määräysten mukaisesti",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 9,
+              "paragraphText" : "* näyttelyyn ilmoitettu koira tai sen omistaja sairastuu",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 10,
+              "paragraphText" : "* näyttely peruutetaan force majeure –syystä (yleisötapahtumien kieltäminen viranomaisten toimesta, liikennelakko, koirien terveystilanne jne.)",
+              "paragraphInterpretation" : null,
+              "paragraphIsSub" : true
+            },
+            {
+              "paragraphId" : 11,
+              "paragraphText" : "Näyttelytoimikunnalla on oikeus periä ilmoittautumismaksun palauttamisesta aiheutuvat pankki- ja käsittelykulut.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Näytteilleasettajaa koskevia määräyksiä",
+          "sectionId": 6,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näytteilleasettajan tulee huolehtia koiransa hyvinvoinnista ja hyvästä kohtelusta.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Näytteilleasettaja vastaa esittämiensä/omistamiensa koirien näyttelyssä mahdollisesti aiheuttamista vahingoista.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 3,
+              "paragraphText" : "Näytteilleasettaja ei saa puhutella arvostelevaa tuomaria näyttelypaikalla ennen arvostelua eikä arvostelun aikana ilman pakottavaa syytä.",
+              "paragraphInterpretation" : null
+            },
+            {
+              "paragraphId" : 4,
+              "paragraphText" : "Näytteilleasettaja ei saa häiritä eikä moittia tuomaria tai muuten käyttäytyä näyttelypaikalla sopimattomasti tai hyvän tavan vastaisesti.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Vastuuvakuutus",
+          "sectionId": 7,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelynjärjestäjän pitää ottaa ryhmätapaturmavakuutus tuomareille ja kehätoimitsijoille sekä vastuuvakuutus, joka kattaa sen osan korvausvastuusta, joka näyttelyiden järjestämisestä voi syntyä yleisöä, toimihenkilöä tai ulkopuolista kohdanneesta henkilö- tai esinevahingosta."
+            }
+          ]
+        }, {
+          "sectionHeader": "Ulkomuototuomarit",
+          "sectionId": 8,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Arvostelevan tuomarin on oltava Suomen Kennelliiton hyväksymä ulkomuototuomari."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ruleId": "nlysaannot2",
+      "ruleName": "Koiranäyttelysäännöt v2",
+      "validStart": "2013-01-01",
+      "validEnd": "2016-12-31",
+      "approvedDate": "2011-11-27",
+      "sections": [
+        {
+          "sectionHeader": "Yleistä",
+          "sectionId": 1,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näitä sääntöjä noudatetaan Suomen Kennelliitto - Finska Kennelklubben ry:n (jäljempänä Kennelliitto) hyväksymissä koiranäyttelyissä. Ilmoittaessaan koiran näyttelyyn näytteilleasettaja sitoutuu noudattamaan näitä sääntöjä sekä näitä sääntöjä täydentäviä Kennelliiton näyttelynjärjestämisohjeita ja FCI:n ohjeita sekä suostuu siihen, että hänen ilmoittautumislomakkeessa antamansa henkilö – ja osoitetiedot saa julkaista ja antaa ulkopuolisille, ellei hän ole tätä osoitetietojen osalta erikseen kieltänyt.",
+              "paragraphInterpretation" : "mahdolliset tulkintaohjeet tänne, sekä kuka niistä vastuussa."
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Näyttelystä on ilmoitettava vähintään kaksi kuukautta ennen sen toimeenpanemista Kennelliiton julkaisussa Koiramme-Våra Hundar.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Jääviys",
+          "sectionId": 3.1,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyssä noudatetaan kulloinkin voimassa olevaa Kennelliiton yleistä jääviyssääntöä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Terveysmääräykset",
+          "sectionId": 3.2,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyn eläinlääkäri voi tarkastaa koiria ja todetessaan koiran sairaaksi, hänellä on oikeus poistaa se näyttelystä. Eläinlääkäri voi myös ottaa koirista näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Vastuuvakuutus",
+          "sectionId": 7,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelynjärjestäjän pitää ottaa ryhmätapaturmavakuutus tuomareille ja kehätoimitsijoille sekä vastuuvakuutus, joka kattaa sen osan korvausvastuusta, joka näyttelyiden järjestämisestä voi syntyä yleisöä, toimihenkilöä tai ulkopuolista kohdanneesta henkilö- tai esinevahingosta."
+            }
+          ]
+        }, {
+          "sectionHeader": "Ulkomuototuomarit",
+          "sectionId": 8,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Arvostelevan tuomarin on oltava Suomen Kennelliiton hyväksymä ulkomuototuomari."
+            }
+          ]
+        }
+      ]
+    },{
+      "ruleId": "nlysaannot3",
+      "ruleName": "Koiranäyttelysäännöt v3",
+      "validStart": "2014-01-01",
+      "validEnd": "2016-12-31",
+      "approvedDate": "2011-11-27",
+      "sections": [
+        {
+          "sectionHeader": "Yleistä",
+          "sectionId": 1,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näitä sääntöjä noudatetaan Suomen Kennelliitto - Finska Kennelklubben ry:n (jäljempänä Kennelliitto) hyväksymissä koiranäyttelyissä. Ilmoittaessaan koiran näyttelyyn näytteilleasettaja sitoutuu noudattamaan näitä sääntöjä sekä näitä sääntöjä täydentäviä Kennelliiton näyttelynjärjestämisohjeita ja FCI:n ohjeita sekä suostuu siihen, että hänen ilmoittautumislomakkeessa antamansa henkilö – ja osoitetiedot saa julkaista ja antaa ulkopuolisille, ellei hän ole tätä osoitetietojen osalta erikseen kieltänyt.",
+              "paragraphInterpretation" : "mahdolliset tulkintaohjeet tänne, sekä kuka niistä vastuussa."
+            },
+            {
+              "paragraphId" : 2,
+              "paragraphText" : "Näyttelystä on ilmoitettava vähintään kaksi kuukautta ennen sen toimeenpanemista Kennelliiton julkaisussa Koiramme-Våra Hundar.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Jääviys",
+          "sectionId": 3.1,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyssä noudatetaan kulloinkin voimassa olevaa Kennelliiton yleistä jääviyssääntöä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Terveysmääräykset",
+          "sectionId": 3.2,
+          "parentSection":3,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelyn eläinlääkäri voi tarkastaa koiria ja todetessaan koiran sairaaksi, hänellä on oikeus poistaa se näyttelystä. Eläinlääkäri voi myös ottaa koirista näytteitä näyttelyn aikana tai viiden vuorokauden kuluessa näyttelyn päättymisestä.",
+              "paragraphInterpretation" : null
+            }
+          ]
+        }, {
+          "sectionHeader": "Vastuuvakuutus",
+          "sectionId": 7,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Näyttelynjärjestäjän pitää ottaa ryhmätapaturmavakuutus tuomareille ja kehätoimitsijoille sekä vastuuvakuutus, joka kattaa sen osan korvausvastuusta, joka näyttelyiden järjestämisestä voi syntyä yleisöä, toimihenkilöä tai ulkopuolista kohdanneesta henkilö- tai esinevahingosta."
+            }
+          ]
+        }, {
+          "sectionHeader": "Ulkomuototuomarit",
+          "sectionId": 8,
+          "paragraphs": [
+            {
+              "paragraphId" : 1,
+              "paragraphText" : "Arvostelevan tuomarin on oltava Suomen Kennelliiton hyväksymä ulkomuototuomari."
+            }
+          ]
+        }
+      ]
+    }
+  ]
