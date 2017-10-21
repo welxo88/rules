@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { setAccordionScriptTag } from '../util/helpFunctions.js';
+import ReactDOM from 'react-dom'
+import { setAccordionScriptTag, getData } from '../util/helpFunctions.js';
 
 import Menu from './Menu';
 import RulesList from './RulesList';
+import RulesCards from './RulesCards';
 
 /*
 class RulesRoot extends React.Component {
@@ -25,17 +27,31 @@ class RulesRoot extends React.Component {
 
 
 class RulesRoot extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            rules: []
+        };
+    }
+    componentWillMount(){
+        console.log('retrieving data from server')
+        getData().then((response) => {
+            this.setState({rules: response.data});
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
     componentDidMount() {
-        document.title = "Rules - sääntöjä helpommin";
+        document.title = "Näyttelysäännöstö";
         setAccordionScriptTag();
     }
     render() {
         return (
             <div>
-                <Menu />
-                <RulesList />
+                <Menu view={this.props.view} />
                 <br />
-                
+                {this.props.view=='list' && <RulesList rules={this.state.rules} />}
+                {this.props.view=='cards' && <RulesCards rules={this.state.rules} />}
             </div>
         );
     }

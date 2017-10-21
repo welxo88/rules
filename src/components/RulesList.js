@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { getData } from '../util/helpFunctions.js';
+import RuleBody from './RuleBody';
 
 class RulesList extends React.Component {
     render() {
-        const rulesToShow = getData();
-        const rules = rulesToShow.map((rule,index) =>
+
+        const rules = this.props.rules.map((rule,index) =>
             <RuleBody key={rule.ruleId} data={rule} />
         );
         return (

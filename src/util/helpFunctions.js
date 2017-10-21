@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 export function setAccordionScriptTag() {
-    let sOld = document.getElementById("accordeonJqueryScript");
+    //PROPER WAY, BUT DOES NOT WORK - CHECK WHY!
+    //let sOld = document.getElementById("accordeonJqueryScript");
+    let sOld = document.body.lastChild;
     sOld.parentNode.removeChild(sOld);
 
     const s = document.createElement('script');
@@ -13,9 +15,5 @@ export function setAccordionScriptTag() {
 }
 
 export function getData(){
-    let data;
-    axios.get(`./example.json`)
-    .then(res => {
-      data = res.body;
-    });
+    return axios.get(`./example.json`);
 }

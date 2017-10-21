@@ -12,7 +12,7 @@ app.get('/bundle.js', function (req, res) {
     res.sendFile(path.join(__dirname, '/../build', 'bundle.js'));
 });
 
-app.get('/bundle.js', function (req, res) {
+app.get('/example.json', function (req, res) {
     res.sendFile(path.join(__dirname, '/../build', 'example.json'));
 });
 

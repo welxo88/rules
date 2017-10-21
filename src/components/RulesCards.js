@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 class RulesCards extends React.Component {
     render() {
-        const rules = rulesToShow.map((rule,index) => {
+        const rules = this.props.rules.map((rule,index) => {
             return(
                 <div className="card" key={rule.ruleId}>
                     <div className="content">
