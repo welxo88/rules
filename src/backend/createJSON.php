@@ -29,7 +29,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // check connection
 if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error);}
 
-/*
+/* dataconnection done in php, sql-version depricated; code kept for example-reasons
 $sql = <<<SQL
 SELECT 
 	rules.ruleId, rules.ruleTextId, rules.ruleName, rules.validStart, rules.validEnd, rules.approvedDate, rules.approvedBy, rules.linkToOriginal,
@@ -132,8 +132,9 @@ while($row = $result3->fetch_assoc()) {
 }
 
 header("Content-Type: text/json; charset=utf-8");
-//print_r($index_arr);
+
 //print_r($result_arr);
+
 //print array out as json
 echo json_encode($result_arr, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
