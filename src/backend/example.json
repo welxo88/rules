@@ -1,6 +1,6 @@
 [
     {
-      "ruleId": "nlysaannot",
+      "ruleTextId": "nlysaannot",
       "ruleName": "Koiranäyttelysäännöt",
       "validStart": "2012-01-01",
       "validEnd": "2016-12-31",
@@ -313,7 +313,7 @@
       ]
     },
     {
-      "ruleId": "nlysaannot2",
+      "ruleTextId": "nlysaannot2",
       "ruleName": "Koiranäyttelysäännöt v2",
       "validStart": "2013-01-01",
       "validEnd": "2016-12-31",
@@ -377,7 +377,7 @@
         }
       ]
     },{
-      "ruleId": "nlysaannot3",
+      "ruleTextId": "nlysaannot3",
       "ruleName": "Koiranäyttelysäännöt v3",
       "validStart": "2014-01-01",
       "validEnd": "2016-12-31",
