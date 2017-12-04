@@ -116,7 +116,7 @@ VALUES
 (1, '11.k', 2, 'Kasvattaja saa kilpailla yhdessä näyttelyssä vain yhdellä ryhmällä rotua kohti.', NULL, FALSE, FALSE),
 (1, '11.k', 3, 'Jos tuomari katsoo ryhmän olevan riittävän tasalaatuinen ja korkeatasoinen, hän voi antaa kunniapalkinnon.', NULL, FALSE, FALSE),
 (1, '11.k', 4, 'Kasvattajaluokan kilpailuarvostelu (KAK). Tuomari sijoittaa neljä (4) kasvattajaryhmää paremmuusjärjestykseen. Mikäli rodun paras ryhmä on saanut kunniapalkinnon, se osallistuu Best in Show -kasvattajaryhmän valintaan.', NULL, FALSE, FALSE),
-(1, '11.1', 1, 'Rodun paras kunniapalkinnolla palkittu kasvattajaryhmä osallistuu näyttelyn parhaan kasvattajaryhmän valintaan. Tuomari sijoittaa neljä (4) parasta ryhmää paremmuusjärjestykseen.', NULL, FALSE, FALSE),
+(1, '11.l', 1, 'Rodun paras kunniapalkinnolla palkittu kasvattajaryhmä osallistuu näyttelyn parhaan kasvattajaryhmän valintaan. Tuomari sijoittaa neljä (4) parasta ryhmää paremmuusjärjestykseen.', NULL, FALSE, FALSE),
 (1, '11.m', 1, 'Jälkeläisluokka on laatuarvostelu, jossa uros tai narttu kilpailee neljän samanrotuisen jälkeläisensä muodostamalla ryhmällä. Jälkeläisten tulee olla palkittu laatumaininnalla erinomainen tai erittäin hyvä tässä näyttelyssä. Urosta tai narttua ei tarvitse ilmoittaa muihin luokkiin, mutta se tulee esittää jälkeläisryhmänsä kanssa.', NULL, FALSE, FALSE),
 (1, '11.m', 2, 'Jälkeläisluokka voidaan järjestää vain rotujärjestön/rotua harrastavan yhdistyksen erikoisnäyttelyissä.', NULL, FALSE, FALSE),
 (1, '11.m', 3, 'Jos tuomari katsoo ryhmän olevan riittävän tasalaatuinen ja korkeatasoinen, hän voi antaa kunniapalkinnon.', NULL, FALSE, FALSE),
