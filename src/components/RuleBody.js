@@ -5,11 +5,18 @@ class RuleBody extends React.Component {
     constructor(props) {
         super(props);
     }
+    createSections(sections){
+        return sections.map((section,index) =>{
+            let subsections;
+            if(section.subSections!=undefined){
+                subsections = this.createSections(section.subSections);
+            }
+            return <SectionBody key={section.sectionId} data={section}>{subsections}</SectionBody>;
+        })
+    }
     render() {
         
-        const sections = this.props.data.sections.map((section,index) =>
-            <SectionBody key={section.sectionId} data={section} />
-        );
+        const sections = this.createSections(this.props.data.sections);
 
         let forReturn = (<div>
                 <div className="title">

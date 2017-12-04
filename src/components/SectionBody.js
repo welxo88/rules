@@ -11,6 +11,12 @@ class SectionBody extends React.Component {
                 <p key={paragraph.paragraphId}>{paragraph.paragraphText}</p>
             );
         }
+        let subsections = [];
+        if(this.props.data.paragraphs!=undefined){
+            paragraphs = this.props.data.paragraphs.map((paragraph,index) =>
+                <p key={paragraph.paragraphId}>{paragraph.paragraphText}</p>
+            );
+        }
 
         return (<div>
             <div className="title">
@@ -18,9 +24,8 @@ class SectionBody extends React.Component {
                 {this.props.data.sectionId+'. '+this.props.data.sectionHeader}
             </div>
             <div className="content">
-                
-                    {paragraphs}
-                
+                {paragraphs}
+                {this.props.children}
             </div></div>);
     }
 }
