@@ -15,8 +15,10 @@ class RulesRoot extends React.Component {
                       {paragraphId : 1,paragraphText:'loading'}
                     ]}
                 ]}
-            ]
+            ],
+            searching: ''
         };
+        this.search = this.search.bind(this);
     }
     componentWillMount(){
         
@@ -30,16 +32,21 @@ class RulesRoot extends React.Component {
         document.title = "Rule§ - Näyttelysäännöstö";
         setAccordionScriptTag();
     }
-    
+    search(e){
+        this.setState({searching:e.target.value});
+    }
     render() {
         
         const rules = this.state.rules.map((rule,index) =>
-            <RuleBody key={rule.ruleTextId} data={rule} />
+            <RuleBody 
+                key={rule.ruleTextId} 
+                data={rule} 
+                toSearch={this.state.searching.length > 2 && this.state.searching} />
         );
         
         return (
             <div>
-                <Menu />
+                <Menu searchFunc={this.search} />
                 <br />
                 <div className="ui styled accordion fluid">{rules}</div>
             </div>

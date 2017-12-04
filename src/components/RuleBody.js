@@ -11,10 +11,18 @@ class RuleBody extends React.Component {
             if(section.subSections!=undefined){
                 subsections = this.createSections(section.subSections);
             }
-            return <SectionBody key={section.sectionId} data={section}>{subsections}</SectionBody>;
+            return <SectionBody 
+                        key={section.sectionId} 
+                        data={section}
+                        toSearch={this.props.toSearch}>
+                            {subsections}
+                    </SectionBody>;
         })
     }
     render() {
+        if(this.props.toSearch!=undefined){
+            console.log(this.props.toSearch);
+        }
         
         const sections = this.createSections(this.props.data.sections);
 
