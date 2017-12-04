@@ -3,38 +3,23 @@ import ReactDOM from 'react-dom'
 import { setAccordionScriptTag, getData } from '../util/helpFunctions.js';
 
 import Menu from './Menu';
-import RulesList from './RulesList';
-import RulesCards from './RulesCards';
-
-/*
-class RulesRoot extends React.Component {
-    componentDidMount() {
-        document.title = "Rules - sääntöjä helpommin";
-        setAccordionScriptTag();
-    }
-    render() {
-        return (
-            <div>
-                <Menu />
-                <RulesList />
-                <br />
-                <RulesCards />
-            </div>
-        );
-    }
-}
-*/
-
+import RuleBody from './RuleBody';
 
 class RulesRoot extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rules: []
+            rules: [
+                {ruleTextId:'loading',ruleName:'loading...',sections:[
+                    {sectionHeader: 'loading...',sectionId: 1,paragraphs: [
+                      {paragraphId : 1,paragraphText:'loading'}
+                    ]}
+                ]}
+            ]
         };
     }
     componentWillMount(){
-        console.log('retrieving data from server')
+        
         getData().then((response) => {
             this.setState({rules: response.data});
         }).catch((error) => {
@@ -42,16 +27,21 @@ class RulesRoot extends React.Component {
         });
     }
     componentDidMount() {
-        document.title = "Näyttelysäännöstö";
+        document.title = "Rule§ - Näyttelysäännöstö";
         setAccordionScriptTag();
     }
+    
     render() {
+        
+        const rules = this.state.rules.map((rule,index) =>
+            <RuleBody key={rule.ruleTextId} data={rule} />
+        );
+        
         return (
             <div>
-                <Menu view={this.props.view} />
+                <Menu />
                 <br />
-                {this.props.view=='list' && <RulesList rules={this.state.rules} />}
-                {this.props.view=='cards' && <RulesCards rules={this.state.rules} />}
+                <div className="ui styled accordion fluid">{rules}</div>
             </div>
         );
     }
