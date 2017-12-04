@@ -8,7 +8,10 @@ class SectionBody extends React.Component {
         let paragraphs = [];
         if(this.props.data.paragraphs!=undefined){
             paragraphs = this.props.data.paragraphs.map((paragraph,index) =>
-                <p key={paragraph.paragraphId}>{paragraph.paragraphText}</p>
+                <p key={paragraph.paragraphId} style={{paddingLeft: paragraph.paragraphIsSub == true && '2em'}}>
+                    {paragraph.paragraphIsPartOfList == true && '\u2022 '}
+                    {paragraph.paragraphText}
+                </p>
             );
         }
 
