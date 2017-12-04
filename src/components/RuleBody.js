@@ -19,8 +19,11 @@ class RuleBody extends React.Component {
                 </div>
                 <div className="content">
                     {this.props.data.approvedDate!=undefined && 'Hyväksytty: '+this.props.data.approvedDate}
+                    <br />
                     {this.props.data.validStart!=undefined && ' Voimassaolo: '+this.props.data.validStart+' - '}
                     {this.props.data.validEnd!=undefined && this.props.data.validEnd}
+                    <br />
+                    {this.props.data.linkToOriginal!=undefined && <a href={this.props.data.linkToOriginal} target='_blank'>Alkuperäinen teksti (pdf)</a>}
                     <div className="accordion">
                         {sections}
                     </div>

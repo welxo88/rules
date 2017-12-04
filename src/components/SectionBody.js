@@ -11,11 +11,11 @@ class SectionBody extends React.Component {
                 <p key={paragraph.paragraphId}>{paragraph.paragraphText}</p>
             );
         }
-        
+
         return (<div>
             <div className="title">
                 <i className="dropdown icon"></i>
-                {this.props.data.sectionHeader}
+                {this.props.data.sectionId+'. '+this.props.data.sectionHeader}
             </div>
             <div className="content">
                 
