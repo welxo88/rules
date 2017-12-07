@@ -15,7 +15,7 @@ export function setAccordionScriptTag() {
 }
 
 export function getData(){
-    return axios.get(`./example.json`);
+    return axios.get(`./example.json?201712072`);
 }
 
 export function preg_quote( str ) {
