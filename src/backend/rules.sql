@@ -32,4 +32,11 @@ VALUES
 		'Kennelliiton hallitus ', 'https://www.kennelliitto.fi/sites/default/files/media/nayttelysaantoja_taydentavat_ohjeet_seka_nayttelyiden_jarjestamisohjeet_2017_1.pdf'),
 	(3, 'valioarvo17', 'Suomen valionarvosäännöt 2017', 
 	 	'2017-01-01', NULL, NULL,
-		NULL, 'https://www.kennelliitto.fi/sites/default/files/media/valionarvosaannot_2017_0.pdf');
+		NULL, 'https://www.kennelliitto.fi/sites/default/files/media/valionarvosaannot_2017_0.pdf'),
+  (4, 'muutoksenhaku07', 'Yleinen muutoksenhakumenettely', 
+	 	'2007-01-01', NULL, '2006-11-26',
+		'Kennelliiton valtuusto', 'https://www.kennelliitto.fi/sites/default/files/media/muutoksenhaku21112008.pdf'),
+  (5, 'antidoping13', 'Antidopingsääntö', 
+	 	'2013-01-01', NULL, '2012-05-27',
+		'Kennelliiton valtuusto', 'https://www.kennelliitto.fi/sites/default/files/media/antidopingsaanto_2013.pdf');
+
