@@ -11,12 +11,37 @@
     <!-- semantic ui - accordeon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+    <!-- semantic ui - modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/modal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/modal.min.js"></script>
     <title>SKL säännöt - helposti luettuna</title>
 </head>
 
 <body>	
     <div id="root" class="ui container">ladataan...</div>
+
+    <div class="ui basic modal">
+        <div class="ui icon header"><i class="archive icon"></i>Rule§ <sup>&alpha; </sup>, v. 2017-12-07</div>
+        <div class="content">
+            <p>Tämän sivun on tarkoitus helpottaa koiranäyttelyihin liittyvän säännöstön selaamista. Kaikki tuodaan yhteen paikkaan saman haun alle.</p>
+            <p>Tekstisisältö on lähtöistin <a href="https://www.kennelliitto.fi/" target="_blank">Suomen Kennelliitolta</a>.</p>
+            <p>Koodin on tehnyt <a href="http://www.poletaev.fi/" target="_blank">Dmitry Poletaev</a>.</p>
+            <p>Lähdekoodi löytyy <a href="https://github.com/welxo88/rules/" target="_blank">GitHub:sta</a>.</p>
+            <p>Ehdotusideoita voi laittaa <a href="mailto:dmitry@poletaev.fi">sähköpostilla</a>.</p>
+        </div>
+        <div class="actions">
+            <div class="ui ok inverted button"><i class="checkmark icon"></i> OK </div>
+        </div>
+    </div>
     <script src="/bundle.js"></script>
+    <script id="windowOnload">
+        window.onload = function () {
+            if (! sessionStorage.justOnce) {
+                sessionStorage.setItem("justOnce", "true");
+                window.location.reload(true);
+            }
+        }
+    </script>
     <script id="accordeonJqueryScript">$(function () {$('.accordion').first().accordion({ exclusive: false });});</script>
 <!-- from awesome fonts use fa-cog or align-justify and th-large -->
   </body>

@@ -36,10 +36,8 @@ class RuleBody extends React.Component {
     render() {
         const sections = this.createSections(this.props.data.sections);
         const areActive = sections.map((sec)=>sec.props.active);
-        console.log(areActive);
         const isFound = (areActive.some(this.trueArrayChecker) ? true : false)
-        console.log(isFound);
-
+        
         let forReturn = (<div>
                 <div className={"title " + (isFound ? 'active' : '')}>
                     <i className="dropdown icon"></i>

@@ -20,8 +20,7 @@ class RulesRoot extends React.Component {
         };
         this.search = this.search.bind(this);
     }
-    componentWillMount(){
-        
+    componentWillMount(){     
         getData().then((response) => {
             this.setState({rules: response.data});
         }).catch((error) => {
@@ -49,6 +48,7 @@ class RulesRoot extends React.Component {
                 <Menu searchFunc={this.search} />
                 <br />
                 <div className="ui styled accordion fluid">{rules}</div>
+                <br />
             </div>
         );
     }
