@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import { setAccordionScriptTag, getData } from '../util/helpFunctions.js';
+import { setAccordionScriptTag, getData, preg_quote } from '../util/helpFunctions.js';
 
 import Menu from './Menu';
 import RuleBody from './RuleBody';
@@ -33,7 +33,7 @@ class RulesRoot extends React.Component {
         setAccordionScriptTag();
     }
     search(e){
-        this.setState({searching:e.target.value});
+        this.setState({searching:preg_quote(e.target.value.toLowerCase())});
     }
     render() {
         

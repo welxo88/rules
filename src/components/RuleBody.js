@@ -4,14 +4,28 @@ import SectionBody from './SectionBody';
 class RuleBody extends React.Component {
     constructor(props) {
         super(props);
+        this.trueArrayChecker = this.trueArrayChecker.bind(this);
     }
+
+    trueArrayChecker(el,index,array){return el==true;}
+
     createSections(sections){
         return sections.map((section,index) =>{
             let subsections;
+            let isFound = -1;
+
             if(section.subSections!=undefined){
                 subsections = this.createSections(section.subSections);
+                let areActive = subsections.map((sec)=>sec.props.active);
+                isFound =  (areActive.some(this.trueArrayChecker) ? 0 : -1)
+            }else{
+                isFound = JSON.stringify(section).toLowerCase().indexOf(this.props.toSearch);
             }
+
+            isFound = (isFound!==-1 ? true : false);
+
             return <SectionBody 
+                        active={isFound}
                         key={section.sectionId} 
                         data={section}
                         toSearch={this.props.toSearch}>
@@ -20,19 +34,19 @@ class RuleBody extends React.Component {
         })
     }
     render() {
-        if(this.props.toSearch!=undefined){
-            console.log(this.props.toSearch);
-        }
-        
         const sections = this.createSections(this.props.data.sections);
+        const areActive = sections.map((sec)=>sec.props.active);
+        console.log(areActive);
+        const isFound = (areActive.some(this.trueArrayChecker) ? true : false)
+        console.log(isFound);
 
         let forReturn = (<div>
-                <div className="title">
+                <div className={"title " + (isFound ? 'active' : '')}>
                     <i className="dropdown icon"></i>
                     {this.props.data.ruleName!=undefined && this.props.data.ruleName + ", "}
                     {this.props.data.validStart!=undefined && this.props.data.validStart}
                 </div>
-                <div className="content">
+                <div className={"content " + (isFound ? 'active' : '')}>
                     {this.props.data.approvedDate!=undefined && 'Hyväksytty: '+this.props.data.approvedDate}
                     <br />
                     {this.props.data.validStart!=undefined && ' Voimassaolo: '+this.props.data.validStart+' - '}

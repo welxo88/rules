@@ -5,7 +5,7 @@ class Menu extends React.Component {
     render() {
         return (<div className="ui borderless main menu placeholder inverted">
                     <div className="ui text container">
-                        <div className="header item">Rule§</div>
+                        <div className="header item">Rule§ <sup>&alpha;lpha</sup></div>
                         <div className="right menu">
                             <div class="item">
                                 <div class="ui icon input">
