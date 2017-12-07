@@ -37,7 +37,7 @@ class SectionBody extends React.Component {
         }
         //console.log(this.props.data.sectionId + ' ' + this.props.active);
 
-        return (<div>
+        return (<div style={{display: ((!this.props.active && this.props.toSearch != '') ? 'none' : '')}}>
             <div className={"title " + (this.props.active ? 'active' : '')}>
                 <i className="dropdown icon"></i>
                 <span dangerouslySetInnerHTML={{ __html: this.props.data.sectionId+'. '+secHeadToShow }}></span>
