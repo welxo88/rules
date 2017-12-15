@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-export function setAccordionScriptTag() {
+export function setScriptTags() {
     //PROPER WAY, BUT DOES NOT WORK - CHECK WHY!
     //let sOld = document.getElementById("accordeonJqueryScript");
-    let sOld = document.body.lastChild;
-    sOld.parentNode.removeChild(sOld);
+    //let sOld = document.body.lastChild;
+    //sOld.parentNode.removeChild(sOld);
 
     const s = document.createElement('script');
     s.id = 'accordeonJqueryScript';
@@ -12,10 +12,17 @@ export function setAccordionScriptTag() {
     s.async = true;
     s.innerHTML = "$(function () {$('.accordion').first().accordion({ exclusive: false });});";
     document.body.appendChild(s);
+
+    const s2 = document.createElement('script');
+    s2.id = 'popupJqueryScript';
+    s2.type = 'text/javascript';
+    s2.async = true;
+    s2.innerHTML = "$(function () {$('div.ui.button').popup({on: 'click'});});";
+    document.body.appendChild(s2);
 }
 
 export function getData(){
-    return axios.get(`./example.json?201712072`);
+    return axios.get(`./example.json?201712073`);
 }
 
 export function preg_quote( str ) {

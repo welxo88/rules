@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import { setAccordionScriptTag, getData, preg_quote } from '../util/helpFunctions.js';
+import { setScriptTags, getData, preg_quote } from '../util/helpFunctions.js';
 
 import Menu from './Menu';
 import RuleBody from './RuleBody';
@@ -29,7 +29,7 @@ class RulesRoot extends React.Component {
     }
     componentDidMount() {
         document.title = "Rule§ - Näyttelysäännöstö";
-        setAccordionScriptTag();
+        setScriptTags();
     }
     search(e){
         this.setState({searching:preg_quote(e.target.value.toLowerCase())});

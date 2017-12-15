@@ -21,11 +21,31 @@ class SectionBody extends React.Component {
                     parToShow = '\u2022 ' + parToShow;
                 }
                 return (
-                    <p 
+                    <div 
                         key={paragraph.paragraphId} 
-                        style={{paddingLeft: paragraph.paragraphIsSub == true && '2em'}}
-                        dangerouslySetInnerHTML={{ __html: parToShow }}>
-                    </p>
+                        style={{paddingLeft: paragraph.paragraphIsSub == true && '2em'}}>
+                        
+                        <div className="p" dangerouslySetInnerHTML={{ __html: parToShow }} />
+                        {paragraph.paragraphInterpretation && <div>
+                            <div className="ui button">Show fluid popup</div>
+                            <div className="ui fluid popup top left transition hidden">
+                                <div className="ui one column divided center aligned grid">
+                                    <div className="column">{paragraph.paragraphInterpretation}</div>
+                                </div>
+                            </div>
+                            </div>
+/*
+                            <div 
+                                className="ui icon" 
+                                data-position="bottom left"
+                                data-variation="wide small"
+                                data-title="Tulkinta"
+                                data-content={paragraph.paragraphInterpretation}>
+                                <i className="pink warning circle icon"></i>
+                            </div>*/
+                        }
+                        
+                    </div>
                 );
             });
         }
@@ -37,7 +57,9 @@ class SectionBody extends React.Component {
         }
         //console.log(this.props.data.sectionId + ' ' + this.props.active);
 
-        return (<div style={{display: ((!this.props.active && this.props.toSearch != '') ? 'none' : '')}}>
+        //TEST PROPERLY HOW THIS WORKS
+        // style={{display: ((!this.props.active && this.props.toSearch != '') ? 'none' : '')}}
+        return (<div>
             <div className={"title " + (this.props.active ? 'active' : '')}>
                 <i className="dropdown icon"></i>
                 <span dangerouslySetInnerHTML={{ __html: this.props.data.sectionId+'. '+secHeadToShow }}></span>
