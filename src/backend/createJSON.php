@@ -45,7 +45,7 @@ ORDER BY
 	LENGTH(rules.ruleId), rules.ruleId, LENGTH(ruleSections.sectionId), ruleSections.sectionId, LENGTH(ruleParagraph.paragraphId), ruleParagraph.paragraphId
 SQL;*/
 
-$sql1 = 'SELECT * FROM rules ORDER BY LENGTH(ruleId), ruleId';
+$sql1 = 'SELECT * FROM rules ORDER BY presentationOrder';
 $sql2 = 'SELECT * FROM ruleSections ORDER BY LENGTH(ruleId), ruleId, CAST(sectionId AS UNSIGNED), LENGTH(sectionId), sectionId';
 $sql3 = 'SELECT * FROM ruleParagraph ORDER BY LENGTH(ruleId), ruleId, CAST(sectionId AS UNSIGNED), LENGTH(sectionId), sectionId, LENGTH(paragraphId), paragraphId';
 

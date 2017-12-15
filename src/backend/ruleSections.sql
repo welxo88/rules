@@ -57,6 +57,7 @@ VALUES
 	(1, '14', NULL, ' Muut ohjeet'),
 	(1, '15', NULL, ' Valitukset'),
 	(1, '16', NULL, ' Voimassaolo'),
+
 	(2, 'A', NULL, 'Näyttelysääntöjä täydentävät ohjeet'),
 	(2, 'A.1', 'A', 'Yleistä'),
 	(2, 'A.2', 'A', 'Osallistumisoikeus'),
@@ -144,6 +145,7 @@ VALUES
 	(2, 'B.14.5', 'B.14', 'Muuta huomioitavaa'),
 	(2, 'B.15', 'B', 'Kennelliiton neuvontapiste'),
 	(2, 'B.16', 'B', 'Poikkeukset'),
+
 	(3, '1', NULL, 'Kaikkia rotuja koskevat vaatimukset'),
 	(3, '1.1', '1', 'Muotovalion arvo (FI MVA)'),
 	(3, '1.2', '1', 'Agilityvalion arvo (FI AVA)'),
@@ -165,14 +167,15 @@ VALUES
 	(3, '1.15', '1', 'Pohjoismaiden muotovalion arvo (POHJ MVA)'),
 	(3, '1.16', '1', 'Erinäiset säännökset'),
 	(3, '1.17', '1', 'Lyhenteiden selitykset'),
+
 	(4, 'A', NULL, 'Yleinen valitusmenettely'),
-	(4, 'A.1', 'A', 'Erimielisyydet'),
-	(4, 'A.1.1', 'A.1', 'Kokeet, kilpailut ja luonnetestit'),
-	(4, 'A.1.1.1', 'A.1.1', 'Valitusaika, valitusmaksu ja jatkovalitukset '),
-	(4, 'A.1.2', 'A.1', 'Näyttelyt'),
-	(4, 'A.1.2.1', 'A.1.2', 'Valitusaika ja valitusmaksu'),
-	(4, 'A.1.2.2', 'A.1.2', 'Jatkovalitukset'),
-	(4, 'B', NULL, 'Yleinen valitusmenettely'),
+	(4, 'A.1', 'A', 'Kokeet, kilpailut ja luonnetestit'),
+	(4, 'A.1.1', 'A.1', 'Valitusaika, valitusmaksu ja jatkovalitukset '),
+	(4, 'A.2', 'A', 'Näyttelyt'),
+	(4, 'A.2.1', 'A.2', 'Valitusaika ja valitusmaksu'),
+	(4, 'A.2.2', 'A.2', 'Jatkovalitukset'),
+	(4, 'B', NULL, 'Oikaisuvaatimusmenettely'),
+
 	(5, '1', NULL, 'Määritelmiä'),
 	(5, '2', NULL, 'Salassapito'),
 	(5, '3', NULL, 'Koiran suorituskykyyn vaikuttaminen'),
@@ -183,5 +186,10 @@ VALUES
 	(5, '5', NULL, 'Dopingnäytteiden ottamista koskeva menettely'),
 	(5, '6', NULL, 'Rangaistukset'),
 	(5, '7', NULL, 'Näytteenoton ja tutkimuksen kustannukset'),
-	(5, '8', NULL, 'Täydentävät ohjeet')
+	(5, '8', NULL, 'Täydentävät ohjeet'),
+
+	(6, '1', NULL, '§'),
+	(6, '2', NULL, '§'),
+	(6, '3', NULL, '§'),
+	(6, '4', NULL, '§')
 ;
