@@ -188,6 +188,18 @@ VALUES
 	(5, '7', NULL, 'Näytteenoton ja tutkimuksen kustannukset'),
 	(5, '8', NULL, 'Täydentävät ohjeet'),
 
+	(7, '1', NULL, 'Näytteenottopaikka'),
+	(7, '2', NULL, 'Näytteenotto'),
+	(7, '2.1', '2', 'Dopingvalvojan tehtävät'),
+	(7, '2.2', '2', 'Näytteenottovälineet'),
+	(7, '2.3', '2', 'Virtsa- ja verinäytteet'),
+	(7, '2.4', '2', 'Karva- ja kirsunäytteet'),
+	(7, '2.5', '2', 'Lomakkeen täyttö'),
+	(7, '2.6', '2', 'Virtsanäytteenoton viimeistely'),
+	(7, '3', NULL, 'Näytteiden käsittely ja jatkotoimenpiteet'),
+	(7, '4', NULL, 'Dopingsääntöä täydentävät Kennelliiton hallituksen erikseen antamat ohjeet koirien lääkinnästä ja hoidosta'),
+	(7, '5', NULL, 'Poikkeuslupamenettely tiettyä lääkitystä pysyvän sairauden hoitoon saavan koiran osallistumiseksi koiratapahtumiin'),
+
 	(6, '1', NULL, '§'),
 	(6, '2', NULL, '§'),
 	(6, '3', NULL, '§'),
