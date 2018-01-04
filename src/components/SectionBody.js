@@ -6,13 +6,20 @@ class SectionBody extends React.Component {
         this.state = {
             containsFound: false
         };
+        this.toggleInterpretation = this.toggleInterpretation.bind(this);
     }
+
+    toggleInterpretation(id){ return () => {
+        let el = document.getElementById(id);
+        el.style.display = el.style.display === 'none' ? '' : 'none';
+    }}
 
     render() {
         let paragraphs = [];
         if(this.props.data.paragraphs!=undefined){
             paragraphs = this.props.data.paragraphs.map((paragraph,index) =>{
                 let parToShow = paragraph.paragraphText;
+                let randomId;
                 
                 if(this.props.active==true){
                     parToShow = parToShow.replace( new RegExp( "(" + this.props.toSearch + ")" , 'gi' ), "<mark>$1</mark>" );
@@ -20,29 +27,21 @@ class SectionBody extends React.Component {
                 if(paragraph.paragraphIsPartOfList == true){
                     parToShow = '\u2022 ' + parToShow;
                 }
+                if(paragraph.paragraphInterpretation) {
+                    randomId = "interpretation-"+paragraph.paragraphId+"-"+Math.floor(Math.random()*1000);
+                }
+
                 return (
                     <div 
                         key={paragraph.paragraphId} 
                         style={{paddingLeft: paragraph.paragraphIsSub == true && '2em'}}>
                         
                         <div className="p" dangerouslySetInnerHTML={{ __html: parToShow }} />
-                        {paragraph.paragraphInterpretation && <div>
-                            <div className="ui button">Show fluid popup</div>
-                            <div className="ui fluid popup top left transition hidden">
-                                <div className="ui one column divided center aligned grid">
-                                    <div className="column">{paragraph.paragraphInterpretation}</div>
-                                </div>
+                        {paragraph.paragraphInterpretation && 
+                            <div className="p">
+                                <i className="pink warning circle icon" onClick={this.toggleInterpretation(randomId)}></i>
+                                <span id={randomId} style={{display:'none',textAlign:'right',fontStyle:'italic'}}>{paragraph.paragraphInterpretation}<br /></span>
                             </div>
-                            </div>
-/*
-                            <div 
-                                className="ui icon" 
-                                data-position="bottom left"
-                                data-variation="wide small"
-                                data-title="Tulkinta"
-                                data-content={paragraph.paragraphInterpretation}>
-                                <i className="pink warning circle icon"></i>
-                            </div>*/
                         }
                         
                     </div>
