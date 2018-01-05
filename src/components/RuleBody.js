@@ -12,7 +12,11 @@ class RuleBody extends React.Component {
 
     dbDateToHumanRead(date){
         let stamp = new Date(Date.parse(date));
-        return stamp.getDate()+'.'+(stamp.getMonth()+1)+'.'+stamp.getFullYear();
+        if (date == '0000-00-00') {
+            return ''
+        } else {
+            return stamp.getDate()+'.'+(stamp.getMonth()+1)+'.'+stamp.getFullYear();
+        }
     }
 
     createSections(sections){
