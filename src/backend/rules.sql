@@ -33,23 +33,31 @@ VALUES
 	 	'2018-01-01', NULL, '2017-12-14',
 		'Kennelliiton hallitus ', 'https://www.kennelliitto.fi/sites/default/files/media/nayttelysaantoja_taydentavat_ohjeet_seka_nayttelyiden_jarjestamisohjeet_2017_1.pdf'),
 
-	(3, 'valioarvo17', 3, 'Suomen valionarvosäännöt 2017', 
+	(3, 'valioarvo17', 4, 'Suomen valionarvosäännöt 2017', 
 	 	'2017-01-01', NULL, NULL,
 		NULL, 'https://www.kennelliitto.fi/sites/default/files/media/valionarvosaannot_2017_0.pdf'),
 
- 	(4, 'muutoksenhaku07', 4, 'Yleinen muutoksenhakumenettely', 
+ 	(4, 'muutoksenhaku07', 5, 'Yleinen muutoksenhakumenettely', 
 	 	'2007-01-01', NULL, '2006-11-26',
 		'Kennelliiton valtuusto', 'https://www.kennelliitto.fi/sites/default/files/media/muutoksenhaku21112008.pdf'),
 
-  	(5, 'antidoping13', 6, 'Antidopingsääntö', 
+  	(5, 'antidoping13', 9, 'Antidopingsääntö', 
 	 	'2013-01-01', NULL, '2012-05-27',
 		'Kennelliiton valtuusto', 'https://www.kennelliitto.fi/sites/default/files/media/antidopingsaanto_2013.pdf'),
 		
-  	(6, 'jaaviys08', 5, 'Kennelliiton yleinen jääviyssääntö', 
+  	(6, 'jaaviys08', 6, 'Kennelliiton yleinen jääviyssääntö', 
 	 	'2008-01-01', NULL, '2007-05-17',
 		'Kennelliiton valtuusto', 'https://www.kennelliitto.fi/sites/default/files/jaaviyssaanto1.1.2008.pdf'),
 
-  	(7, 'antidopingohje13', 7, 'Ohje dopingnäytteen ottamisesta ja tutkimisesta', 
+  	(7, 'antidopingohje13', 9, 'Ohje dopingnäytteen ottamisesta ja tutkimisesta', 
 	 	'2013-01-01', NULL, '2015-10-08',
-		'Kennelliiton hallitus', 'https://www.kennelliitto.fi/sites/default/files/media/ohje_dopingnaytteen_tutkimisesta_ja_ottamisesta_0.pdf');
+		'Kennelliiton hallitus', 'https://www.kennelliitto.fi/sites/default/files/media/ohje_dopingnaytteen_tutkimisesta_ja_ottamisesta_0.pdf'),
 
+  	(8, 'nordohje18', 3, 'NORD-näyttelyiden ohjeet', 
+	 	'2018-01-01', NULL, '2017-04-06',
+		'Kennelliiton hallitus', 'https://www.kennelliitto.fi/sites/default/files/nord-nayttelyiden_ohjeet_hall6.4.pdf'),
+	
+	(9, 'rko', 7, 'RKO - Rotukohtaiset ohjeet liioiteltujen piirteiden huomioimisesta ulkomuotoarvostelussa ', 
+	 	NULL, NULL, NULL,
+		'-', 'https://www.kennelliitto.fi/sites/default/files/media/rotukohtaiset_ohjeet_rko_0.pdf')
+;
