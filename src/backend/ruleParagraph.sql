@@ -1057,7 +1057,6 @@ VALUES
 (9, '17.5', 3, 'Silmämunan vauriot, joista on merkkinä sarveiskalvon sameus ja/tai pigmentoituminen, ovat hylkäävä virhe syystä riippumatta.', NULL, TRUE, TRUE),
 (9, '17.5', 4, 'Silmien ärsytyksen merkit, esim. toistuva räpyttely tai siristely, tulee ottaa huomioon laatuarvostelussa.', NULL, TRUE, TRUE),
 (9, '17.5', 5, 'Anatomiset piirteet jotka liittyvät kohonneeseen silmävammojen riskiin (hyvin lyhyt kuono, runsas löysä nahka jne.) ovat tarkkailtavia piirteitä ja ne tulisi ottaa huomioon laatu- ja kilpailuarvostelussa suhteutettuna niiden voimakkuuteen.', NULL, TRUE, TRUE),
-(9, '17.6', 1, 'Lievempien silmä-ärsytyksen oireiden (esim. runsas kyynelvuoto, värjäytymät pään karvoituksessa) tulisi vaikuttaa kilpailuarvosteluun.', NULL, FALSE, FALSE),
-
+(9, '17.6', 1, 'Lievempien silmä-ärsytyksen oireiden (esim. runsas kyynelvuoto, värjäytymät pään karvoituksessa) tulisi vaikuttaa kilpailuarvosteluun.', NULL, FALSE, FALSE)
 
 ;
