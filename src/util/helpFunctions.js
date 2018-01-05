@@ -22,7 +22,7 @@ export function setScriptTags() {
 }
 
 export function getData(){
-    return axios.get(`./example.json?201712073`);
+    return axios.get(`./example.json?`+Date.now());
 }
 
 export function preg_quote( str ) {
