@@ -40,10 +40,10 @@ class SectionBody extends React.Component {
                         {paragraph.paragraphInterpretation && 
                             <div className="p">
                                 <i className="pink warning circle icon" onClick={this.toggleInterpretation(randomId)}></i>
-                                <span id={randomId} style={{display:'none',textAlign:'right',fontStyle:'italic'}}>{paragraph.paragraphInterpretation}<br /></span>
+                                <span id={randomId} style={{display:'none',textAlign:'right',fontStyle:'italic',fontSize:'0.8rem'}}>{paragraph.paragraphInterpretation}<br /></span>
                             </div>
                         }
-                        
+                        <br />
                     </div>
                 );
             });
